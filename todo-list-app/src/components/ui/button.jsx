@@ -1,20 +1,9 @@
-// src/components/ui/button.jsx
 import React from "react";
 
-export function Button({ children, onClick }) {
+export default function Button({ onClick, label }) {
   return (
-    <button
-      style={{
-        padding: "8px 16px",
-        backgroundColor: "#4f46e5",
-        color: "#fff",
-        border: "none",
-        borderRadius: "4px",
-        cursor: "pointer"
-      }}
-      onClick={onClick}
-    >
-      {children}
+    <button onClick={onClick} style={{ margin: "1rem 0" }}>
+      {label}
     </button>
   );
 }
